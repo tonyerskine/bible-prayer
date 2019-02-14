@@ -33,10 +33,23 @@ select {
 }
 
 .scripture > p {
-    margin: 0;
+    margin: 0.5em;
 }
 
 .citation {
     font-size: small;
     font-style: italic;
+}
+
+.who, .pronoun, .singular, .plural {
+    color: red;
+}
+
+span.capitalize {
+    text-transform: capitalize;
+}
+
+.adapted-from {
+    text-align: right;
+    font-size: medium;
 }
