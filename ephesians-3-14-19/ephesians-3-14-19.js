@@ -1,19 +1,28 @@
 $(document).ready(function () {
     console.log('document ready')
-    fillInValues();
-    $('input').change(fillInValues)
-    $('input[type=text]').keydown(fillInValues)
+    showHidePlurals();
+    $('input[type=radio]').change(showHidePlurals)
+    $('input[type=text]').keyup(fillInValues)
     $(`#version`).change(changeVersion)
 })
 
 function fillInValues() {
+    let who = $(`#who`).val()
+    console.log(`filling in values for '${who}'`)
+    $(`.who`).html(who)
+    $(`.possessive`).append(`'s`)
+}
+
+function showHidePlurals() {
     let plural = $('input[name=plural]:checked').val()
     if (plural === `false`) {
         $("span.plural").hide()
+        $("span.singular").show()
     }
     else {
         console.log('showing plurals')
         $("span.plural").show()
+        $("span.singular").hide()
     }
 }
 
