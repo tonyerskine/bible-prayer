@@ -26,3 +26,17 @@ header {
 select {
     background-color: #f0e0be;
 }
+
+.scripture {
+    background-color: rgba(100%, 100%, 100%, 0.33);
+    padding: 0.4em;
+}
+
+.scripture > p {
+    margin: 0;
+}
+
+.citation {
+    font-size: small;
+    font-style: italic;
+}

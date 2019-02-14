@@ -21,5 +21,6 @@ function changeVersion() {
     let version = $(this).val();
     console.log('change version to ', version)
     $(`.scripture`).hide()
+    $(`.citation`).hide()
     $(`.${version}`).show()
 }
