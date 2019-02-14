@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     padding: 1em;
     font-family: "Times New Roman";
+    color: #484339;
 }
 
 input[type=text] {
@@ -25,9 +26,21 @@ input.horizontal {
 }
 
 header {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
+}
+
+#home-link {
+    border: 1px solid #c0b398;
+    border-radius: 10px;
+    padding: 0.1em 0.5em;
+}
+
+#home-link > a {
+    color: #60594c;
+    text-decoration: none;
 }
 
 select {
@@ -35,7 +48,7 @@ select {
 }
 
 .scripture {
-    background-color: rgba(100%, 100%, 100%, 0.33);
+    background-color: rgba(240, 224, 190, 0.66);
     padding: 0.4em;
 }
 
@@ -46,10 +59,6 @@ select {
 .citation {
     font-size: small;
     font-style: italic;
-}
-
-.who, .pronoun, .singular, .plural {
-    color: red;
 }
 
 span.capitalize {
